@@ -32,7 +32,7 @@
 }
 
 .header-nav {
-  margin: 40px 0 0 0;
+  margin: 45px 0 0 0;
 }
 
 body {
@@ -43,33 +43,94 @@ body {
   margin-top: 25px;
 }
 
+.shadow-box {
+  height: 20vw;
+  width: 24vw;
+  z-index: -7;
+  background-color: #e7edee;
+  /* transform: translate(1px, 2px); */
+}
+
 .content-box {
   background-color: #ffffff;
-  /* border: 1px black solid; */
-  width: 24vw;
-  margin-bottom: 25px;
+  /* width: 24vw;*/
   height: 20vw;
+  width: 30%;
+  margin: 0 1.5%;
   text-align: center;
+  border-radius: 2px;
+  position: relative;
+}
 
-  line-height: 20vh;
+.content-box:hover {
+  border-top: 2px #d83a6a solid;
+  box-shadow: 0px 0px 20px #aaaeb6;
+  transform: translateY(-12px);
+}
+
+.content-box:hover .content-box-title {
+  color: #caa97d;
+}
+
+.content-box:hover .content-box-text {
+  transform: translateY(-50px);
 }
 
 .content-box-title {
+  font-size: 30px;
   color: #aaaeb6;
 }
 
 .content-box-subtext {
   color: #696579;
+  font-size: 14px;
+  font-weight: bold;
+  /* position: relative;
+  top: 33%; */
+}
+
+.content-box-text {
+  position: relative;
+  top: 28%;
 }
 
 .content-box-center {
-  margin-left: 25px;
-  margin-right: 25px;
+  /* margin-left: 25px;
+  margin-right: 25px; */
 }
+
+.content-box-button {
+  display: none;
+  background-color: #696579;
+  width: 80%;
+  height: 57px;
+  /* bottom: -25px; */
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content-box:hover .content-box-button {
+  display: block;
+}
+
 
 .first-row, .second-row {
   /* margin-top: 25px; */
   margin: 0 auto;
+}
+
+.first-row {
+  margin-bottom: 45px;
 }
 
 .item-sort {
@@ -79,16 +140,25 @@ body {
   width: 525px;
   z-index: 1;
   text-align: center;
+  position: relative;
 }
 
 .item {
-    /* border: 1px black solid; */
-    height: 55px;
-    display: inline-block;
-    background-color: #696579;
-    color: white;
-    font-size: 14px;
-    line-height: 55px;
+  /* border: 1px black solid; */
+  height: 55px;
+  display: inline-block;
+  background-color: #696579;
+  color: white;
+  font-size: 14px;
+  /* position: relative; */
+  /* top: 50%; */
+}
+
+.item-text {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 .item:hover {
@@ -101,6 +171,10 @@ body {
   display: block;
   text-align: left;
   margin-left: 30px;
+}
+
+.home-link {
+  color: #fdecca;
 }
 
 .welcome-text {
