@@ -6,44 +6,50 @@
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <title></title>
   </head>
+
   <body>
-    <div class="container-fluid header">
+    <header class="container-fluid header">
       <div class="header-bg">
         <div class="row header-nav">
-          <div class="col-md-10">
-            <img src="images/logo.png" class="logo">
+
+          <!-- logo -->
+          <div class="col-sm-10 col-xs-12">
+            <img src="images/logo.png" class="logo" alt="logo">
           </div>
-          <div class="col-md-1">
-            <a class="home-link">Home</a>
-          </div>
-          <div class="col-md-1">
-            <a class="home-link">Away</a>
-          </div>
+
+          <!-- header links -->
+            <div class="col-sm-1 col-xs-6 link">
+              <a href="#" class="header-link">Home</a>
+            </div>
+            <div class="col-sm-1 col-xs-6 link">
+              <a href="#" class="header-link">Away</a>
+            </div>
         </div>
 
         <div class="welcome-text">
           <h1 class="header-text">Why Hello There</h1>
-          <p class="header-text header-intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
+          <p class="header-intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
         </div>
       </div>
-    </div>
+    </header>
 
     <div class="row item-sort">
-      <div class="col-xs-4 item">
+      <div class="col-xs-4 item item-active" id="show-all">
         <span class="item-text">SHOW ALL</span>
       </div>
-      <div class="col-xs-4 item">
+      <div class="col-xs-4 item" id="show-even">
         <span class="item-text">SHOW EVEN</span>
       </div>
-      <div class="col-xs-4 item">
+      <div class="col-xs-4 item" id="show-odd">
         <span class="item-text">SHOW ODD</span>
       </div>
     </div>
 
     <div class="container body-content">
 
-      <div class="row first-row">
-        <div class="content-box col-sm-4">
+      <!-- boxes -->
+      <section class="row boxes">
+        <div class="col-sm-4 content-box odd">
           <div class="content-box-text">
             <p class="content-box-title">BOX NUMBER 1</p>
             <p class="content-box-subtext">USELESS SUBTEXT</p>
@@ -53,7 +59,7 @@
           </div>
         </div>
 
-        <div class="col-sm-4 content-box">
+        <div class="col-sm-4 content-box even">
           <div class="content-box-text">
             <p class="content-box-title">BOX NUMBER 2</p>
             <p class="content-box-subtext">USELESS SUBTEXT</p>
@@ -62,7 +68,8 @@
             <a href="#" class="content-button-link"><p class="button-text">VIEW THE CASE STUDY</p></a>
           </div>
         </div>
-        <div class="col-sm-4 content-box">
+
+        <div class="col-sm-4 content-box odd">
           <div class="content-box-text">
             <p class="content-box-title">BOX NUMBER 3</p>
             <p class="content-box-subtext">USELESS SUBTEXT</p>
@@ -71,10 +78,8 @@
           <a href="#" class="content-button-link">  <p class="button-text">VIEW THE CASE STUDY</p></a>
           </div>
         </div>
-      </div>
 
-      <div class="row second-row">
-        <div class="col-sm-4 content-box">
+        <div class="col-sm-4 content-box even">
           <div class="content-box-text">
             <p class="content-box-title">BOX NUMBER 4</p>
             <p class="content-box-subtext">USELESS SUBTEXT</p>
@@ -83,7 +88,8 @@
             <a href="#" class="content-button-link"><p class="button-text">VIEW THE CASE STUDY</p></a>
           </div>
         </div>
-        <div class="col-sm-4 content-box">
+
+        <div class="col-sm-4 content-box odd">
           <div class="content-box-text">
             <p class="content-box-title">BOX NUMBER 5</p>
             <p class="content-box-subtext">USELESS SUBTEXT</p>
@@ -92,7 +98,8 @@
           <a href="#" class="content-button-link"><p class="button-text">VIEW THE CASE STUDY</p></a>
           </div>
         </div>
-        <div class="col-sm-4 content-box">
+
+        <div class="col-sm-4 content-box even">
           <div class="content-box-text">
             <p class="content-box-title">BOX NUMBER 6</p>
             <p class="content-box-subtext">USELESS SUBTEXT</p>
@@ -101,11 +108,12 @@
           <a href="#" class="content-button-link"><p class="button-text">VIEW THE CASE STUDY</p></a>
           </div>
         </div>
-      </div>
 
+      </section>
     </div>
 
     <script src="jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
