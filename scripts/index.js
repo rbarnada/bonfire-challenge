@@ -1,4 +1,4 @@
-$('#show-all').on('click', function (event) {
+$('#show-all').on('click', function () {
   $('#show-all').addClass('item-active')
   $('#show-odd').removeClass('item-active')
   $('#show-even').removeClass('item-active')
@@ -21,3 +21,7 @@ $('#show-odd').on('click', function () {
   $('.even').fadeOut(200)
   setTimeout(() => $('.odd').fadeIn(), 200)
 })
+
+// $('a').on('click', function (event) {
+//   event.preventDefault()
+// })
