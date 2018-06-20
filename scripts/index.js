@@ -1,3 +1,4 @@
+// Show all
 $('#show-all').on('click', function () {
   $('#show-all').addClass('item-active')
   $('#show-odd').removeClass('item-active')
@@ -6,6 +7,7 @@ $('#show-all').on('click', function () {
   $('.even').fadeIn(400)
 })
 
+// Show evens, hide odds
 $('#show-even').on('click', function () {
   $('#show-all').removeClass('item-active')
   $('#show-odd').removeClass('item-active')
@@ -14,6 +16,7 @@ $('#show-even').on('click', function () {
   setTimeout(() => $('.even').fadeIn(), 200)
 })
 
+// Show odds, hide evens
 $('#show-odd').on('click', function () {
   $('#show-all').removeClass('item-active')
   $('#show-even').removeClass('item-active')
