@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   color: white;
   padding-left: 0;
@@ -134,8 +138,11 @@ body {
   border-bottom: 1px #e3e9ec solid;
   border-radius: 2px;
   box-shadow: 0px 0px 10px rgba(35,35,35,0.14);
-  height: 279px;
+  /* height: 279px; */
   /* margin: 0 1.6% 45px; */
+  /* padding-top: 34%;
+  padding-bottom: 34%; */
+  padding: 34% 5px;
   position: relative;
   text-align: center;
   width: 100%;
@@ -204,15 +211,13 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .item-sort {
-    max-width: 50%;
-  }
   .content-box {
     width: 75%;
-    margin: 25px 12.4% 0;
+    margin: 25px 12.4% 25%;
   }
   .boxes {
     margin-top: 0px;
+    margin-bottom: 25px;
   }
 
   /* responsive text */
@@ -240,11 +245,46 @@ a {
   }
   .header-text {
     font-size: 45px;
+    padding: 0 10px;
+  }
+  .header-bg {
+    height: auto;
+  }
+  .logo {
+    /* width: 100%; */
+  }
+  .header-intro {
+    padding-bottom: 40px;
+  }
+  .item-sort {
+    margin-top: 0;
+  }
+  .item-sort span {
+    font-size: 16px;
   }
 }
 
-/* @media screen and (max-width: 767px) {
-  .content-box {
+ @media screen and (max-width: 767px) {
+   .logo {
+     margin: 0 auto;
+   }
+   .link {
+     margin-top: 15px;
+   }
+}
+
+@media screen and (max-width: 482px) {
+  .content-box-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .header-intro {
+    width: 80%;
+  }
+}
+  /*.content-box {
     width: 50%;
     margin: 25px auto 0;
   }
