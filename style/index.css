@@ -67,7 +67,7 @@ body {
   display: none;
 }
 
-.content-box:hover .content-container, .content-box:active .content-container {
+.content-box:hover .content-container{
   border-top: 2px #d83a6a solid;
   box-shadow: 0px 0px 25px #aaaeb6;
   transform: translateY(-12px);
