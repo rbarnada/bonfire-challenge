@@ -59,7 +59,7 @@ body {
   position: relative;
   text-align: center;*/
   width: 30%;
-  height: 279px;
+  height: 310px;
   margin: 0 1.6% 45px;
 }
 
@@ -277,6 +277,7 @@ a {
   .content-box-title {
     font-size: 30px;
   }
+
 }
 
 @media screen and (max-width: 412px) {
