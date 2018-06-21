@@ -126,7 +126,7 @@ body {
 
 .content-container {
   background-color: #ffffff;
-  border-bottom: 1px #e3e9ec solid;
+  border-bottom: 2px #e3e9ec solid;
   border-radius: 2px;
   box-shadow: 0px 0px 10px rgba(35,35,35,0.14);
   padding: 34% 5px;
@@ -276,5 +276,12 @@ a {
 @media screen and (max-width: 412px) {
   .header-intro {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .content-box {
+    width: 95%;
+    margin: 25px 2.5% 25%;
   }
 }
