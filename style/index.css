@@ -50,14 +50,6 @@ body {
 }
 
 .content-box {
-  /* background-color: #ffffff;
-  border-bottom: 1px #e3e9ec solid;
-  border-radius: 2px;
-  box-shadow: 0px 0px 10px rgba(35,35,35,0.14);
-  height: 279px;
-  margin: 0 1.6666% 45px;
-  position: relative;
-  text-align: center;*/
   width: 30%;
   height: 310px;
   margin: 0 1.6% 45px;
@@ -124,7 +116,6 @@ body {
   display: block;
 }
 
-
 .boxes {
   margin: 50px auto 0;
 }
@@ -138,10 +129,6 @@ body {
   border-bottom: 1px #e3e9ec solid;
   border-radius: 2px;
   box-shadow: 0px 0px 10px rgba(35,35,35,0.14);
-  /* height: 279px; */
-  /* margin: 0 1.6% 45px; */
-  /* padding-top: 34%;
-  padding-bottom: 34%; */
   padding: 34% 5px;
   position: relative;
   text-align: center;
@@ -152,7 +139,6 @@ body {
   margin: -27px auto 0 auto;
   position: relative;
   text-align: center;
-  /* width: 525px; */
   max-width: 36%;
   z-index: 1;
 }
@@ -184,7 +170,6 @@ body {
 .logo {
   display: block;
   margin-left: 30px;
-  /* text-align: left; */
 }
 
 .header-link:hover, .header-link:focus {
@@ -215,50 +200,58 @@ a {
     width: 75%;
     margin: 25px 12.4% 25%;
   }
+
   .boxes {
     margin-top: 0px;
     margin-bottom: 25px;
   }
 
-  /* responsive text */
   .header-intro {
     font-size: 20px;
     width: 50%;
   }
+
   .header-link {
     font-size: 20px;
   }
+
   .item-sort {
     max-width: 100%;
   }
+
   .item-text {
     font-size: 20px;
   }
+
   .content-box-title {
     font-size: 40px;
   }
+
   .content-box-subtext {
     font-size: 20px;
   }
+
   .button-text {
     font-size: 20px;
   }
+
   .header-text {
     font-size: 45px;
     padding: 0 10px;
   }
+
   .header-bg {
     height: auto;
   }
-  .logo {
-    /* width: 100%; */
-  }
+
   .header-intro {
     padding-bottom: 40px;
   }
+
   .item-sort {
     margin-top: 0;
   }
+
   .item-sort span {
     font-size: 16px;
   }
@@ -268,6 +261,7 @@ a {
    .logo {
      margin: 0 auto;
    }
+
    .link {
      margin-top: 15px;
    }
@@ -277,7 +271,6 @@ a {
   .content-box-title {
     font-size: 30px;
   }
-
 }
 
 @media screen and (max-width: 412px) {
@@ -285,29 +278,3 @@ a {
     width: 80%;
   }
 }
-  /*.content-box {
-    width: 50%;
-    margin: 25px auto 0;
-  }
-  .body-content {
-    margin-top: 0;
-  }
-  .item-sort {
-    max-width: 75%;
-  }
-  .logo {
-    margin: 0 auto;
-  }
-  .link {
-    margin-top: 15px;
-  }
-  .header-intro {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 537px) {
-  .item-sort {
-    max-width: 100%;
-  }
-} */

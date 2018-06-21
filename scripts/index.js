@@ -24,7 +24,3 @@ $('#show-odd').on('click', function () {
   $('.even').fadeOut(200)
   setTimeout(() => $('.odd').fadeIn(), 200)
 })
-
-// $('a').on('click', function (event) {
-//   event.preventDefault()
-// })
